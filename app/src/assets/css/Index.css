@@ -1,0 +1,92 @@
+@import './public.css';
+
+
+#app .mian-banner{
+    width: 7.5rem;
+  
+}
+#app .mian-banner-list{
+    width: 7.5rem;
+    height: 5.2rem;
+}
+#app .mian-banner-list img{
+    width: 7.5rem;
+    height: 5.2rem;
+   
+}
+
+.commodity{
+    height: 5.64rem;
+    width: 7.5rem;
+   
+}
+.mian-shopping{
+    margin-bottom: 1rem;
+}
+.direct-mail{
+margin-bottom:1rem;
+}
+.commodity .Commodity-title{
+    height: 0.92rem;
+   line-height: 0.92rem;
+     position: relative;
+}
+.Commodity-title .commodity-icon{
+    width: 0.4rem;
+    height: 0.4rem;
+    position: absolute;
+    top: 0.26rem;
+    left: 0.24rem;
+   
+}
+direct mail
+.commodity .merchandise{
+    width: 7.5rem;
+    height: 4.7rem;
+    padding: 0 0.3rem;
+}
+.commodity  .commodity-li{
+    width: 3.3rem;
+    height: 4.7rem;
+    float: left;
+    background: white;
+}
+
+.merchandise li:first-child{
+    margin-left: 0.12rem;
+}
+.merchandise li:last-child{
+    margin-left: 0.12rem;
+}
+.commodity-li img{
+    width: 3.3rem;
+     height: 3.3rem;
+     vertical-align:bottom;
+}
+.commodity  .describe{
+    height: calc(100% - 3.3rem);
+    position:relative;
+     padding:0.2rem;
+}   
+
+.describe  span{
+    position: absolute;
+    top: 0;
+
+}
+.describe .price{
+    font-size: 0.14rem;
+    color: red;
+   
+}
+.describe .or-price{
+    font-size: 0.12rem;
+      right: 0.4rem;
+      color: #666666;
+}
+.describe p{
+    font-size: 0.14rem;
+   margin-top: 0.2rem;    
+   color: #666666;
+}
+

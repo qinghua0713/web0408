@@ -1,0 +1,65 @@
+body,html{
+    background: #fff;
+    
+}
+
+.evaluate-tab{
+    width: calc(100% - 0.6rem);
+    padding: 0.1rem 0;
+     display: flex;
+     justify-content: space-around;
+        border-bottom: 1px solid #ddd;
+         margin: auto;
+
+}
+  .evaluate-tab  .ev-items{
+      width: 1.36rem;
+      height: 0.5rem;
+      background-color: #999999;
+      border-radius: 50px;
+      color: #fff;
+     text-align: center;
+      line-height: 0.5rem;
+  }
+ 
+  .evaluate-container{
+    padding:0 0.3rem;
+}
+   .evaluate-items{
+      padding-bottom: 0.2rem;
+   }
+
+   .evaluate-items .user-evaluate{
+       padding: 0.2rem 0;
+   }
+ 
+ .user-evaluate span:first-of-type{
+            color: #ff9900;
+         font-size: 0.16rem;
+     
+   }
+ .user-evaluate span:last-of-type{
+    color: #999;
+    font-size: 0.12rem;
+    float: right;
+    
+}
+.evaluate-cont{
+padding-bottom: 0.1rem;
+}
+.evaluate-cont,.user-evaluate {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.evaluate-cont img{
+    width: 1rem;
+}
+.evaluate-cont  span{
+    color: #999;
+}
+.Adm-reply{
+    background: #ddd;
+    border-radius: 0.06rem;
+    padding: 0.16rem;
+}
