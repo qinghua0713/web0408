@@ -1,0 +1,148 @@
+@charset "utf-8";
+.per-center{
+	
+	padding: 16px 0;
+
+}
+.per-center .logo-box{
+	height: 30px;
+	background: url(../img/playicons.png)-180px -122px no-repeat;
+}
+.per-logon-container{
+	background: url(../img/mbanner.jpg);
+	height: 542px;
+	width: 100%;
+	position: relative;
+}
+.per-banner{
+  position: absolute;
+  overflow: hidden;
+
+bottom: 0;
+margin: auto;
+}
+.type-area2{
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	
+}
+.pre-logon-box{
+	width: 284px;
+	height: 406px;
+	padding: 20px 24px;
+	background: #fff;
+	position: absolute;
+	right: 260px;
+	bottom: 70px;
+}
+.logon-icon{
+	background: url(../img/new-sso.png)-100px 2px no-repeat;
+	height: 23px;
+	width: 100px;
+
+}
+ .per-logon-container  #user, #psd{
+	display: inline-block;
+width: 222px;
+	height: 30px;
+margin-bottom: 12px;
+padding: 0 30px;
+}
+
+.psd-back {
+	display: inline-block;
+position: absolute;
+right: 39px;
+
+}
+.psd-back a ,span, .iphone-logon{
+	color: #1a9eff;
+	font-size: 12px;
+
+	
+}
+
+.checked{
+	background: url(../img/new-sso.png)-20px -66px no-repeat;
+   width: 16px;
+   height: 16px;
+   display: inline-block;
+   vertical-align: bottom;
+}
+.per-logon-container .rem-me , .issue,em{
+	color: #999;
+	
+}
+.per-logon-container #pre-logon{
+	padding: 6px 97px;
+	display: inline-block;
+	background: #1a9eff;
+	color: #fff;
+	border: none;
+	outline: none;
+	margin-top: 12px;
+}
+.pre-iph-sub{
+	margin-top: 12px;
+}
+.iphone-logon{
+	position: absolute;
+	right: 40px;
+	display: inline-block;
+}
+ .pre-iph-sub .issue-icon{
+ 	vertical-align: bottom;
+ 	display: inline-block;
+ 	width: 16px;
+ 	height: 16px;
+ 	background: url(../img/new-sso.png) 0px -384px no-repeat;
+ }
+.per-logon-container .user-icon, .psd-icon{
+	width: 18px;
+	height: 18px;
+	display: inline-block;
+	position: absolute;
+}
+.per-logon-container .user-icon{
+	background: url(../img/new-sso.png)-96px -36px;
+	top: 60px;
+	left: 34px;
+}
+.per-logon-container .psd-icon{
+	background: url(../img/new-sso.png)-36px -36px no-repeat;
+	top: 102px;
+	left: 34px;
+}
+.per-logon-container  .else-log{
+	margin-top: 96px;
+  margin-left: 26px;
+}
+em{
+	text-decoration: none;
+	font-style: normal;
+	
+}
+.else-link ul{
+	width: 100%;
+	height: 30px;
+	padding:  0 50px;
+	text-align: center;
+	margin-top: 20px;
+}
+.else-link li{
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	margin:  0 6px;
+}
+.else-link .QQ{
+	background: url(../img/new-sso.png) 0 -350px no-repeat;
+}
+.else-link .microblog {
+	background: url(../img/new-sso.png)-30px -350px no-repeat;
+}
+.else-link .WeChat {
+	background: url(../img/new-sso.png)-60px -350px no-repeat;
+}

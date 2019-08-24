@@ -1,0 +1,93 @@
+body,html{
+    background-color: whitesmoke;
+}
+.shopBox{
+    width: 425px;
+    height: 375px;
+    background-color: white;
+    margin: 0 auto;
+    position: relative;
+}
+.shopLine{
+    /*background-color: pink;*/
+    height: 70px;
+    padding: 15px;
+    position: relative;
+    box-shadow: 3px 3px 3px #dddddd;
+    margin-bottom: 3px;
+}
+.shopLine img{
+    float: left;
+    width: 70px;
+    height: 70px;
+}
+.inputBox{
+    float: left;
+    margin-top: 30px;
+    margin-right: 10px;
+}
+.shopDetails{
+    float: left;
+    margin-left: 20px;
+}
+.shopDetails span{
+    display: block;
+    margin-bottom: 5px;
+}
+.shopDetails span:nth-child(2){
+    color: gray;
+    font-size: 13px;
+    margin: 8px 0;
+}
+.shopDetails span:nth-child(3){
+    color: #e4393e;
+    font-size: 16px;
+}
+.shopCalc{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    border: 1px solid #9A9A9A;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 5px;
+}
+.calcDown,.calcUp{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.calcNum{
+    width: 28px;
+    height: 28px;
+    border: none;
+    text-align: center;
+    border-left: 1px solid #9A9A9A;
+    border-right: 1px solid #9A9A9A;
+    outline: none;
+    display: inline-block;
+
+}
+.shopCart{
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    background-color: pink;
+    bottom: 0;
+    left: 0;
+}
+.shopCon{
+    position: relative;
+    padding: 0 15px;
+}
+.totalPrices{
+    float: left;
+    margin-left: 50px;
+    line-height: 80px;
+}
+input[type=number]::-webkit-inner-spin-button,  
+input[type=number]::-webkit-outer-spin-button {  
+-webkit-appearance: none;  
+margin: 0;  
+        }

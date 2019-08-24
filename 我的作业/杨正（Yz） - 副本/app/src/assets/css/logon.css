@@ -1,0 +1,59 @@
+.logon-top{
+    width:7.5rem;
+    height: 1.4rem;
+    line-height: 1.4rem;
+    position: relative;
+    text-align: center;
+    background-color: #ff9900;
+    color: white;
+}
+.logon-top  .return-icon{
+    position: absolute;
+    left: 0.34rem;
+    font-size: 0.3rem;
+    
+}
+.logon-top .logon{
+   font-size: 0.14rem;
+   position: absolute;
+   
+}
+.logon-top .register{
+    position: absolute;
+    right: 0.24rem;
+    font-size: 0.14rem;
+}
+body{
+    font-size: 0.16rem;
+}
+.logon-box{
+    padding: 0 0.74rem;
+    height: 11.94rem;
+    width: 7.5rem;
+}
+.logon-box #logon-form{
+    margin-top: 2.44rem;
+}
+hr{
+    margin-top: 0.48rem;
+    margin-bottom: 0.56rem;
+}
+.logon-box .forget-psd{
+    float: right;
+    margin-right: 0.2rem;
+}
+.logon-box .logon-btn{
+    width: 6.02rem;
+    display: inline-block;
+    height: 1.02rem;
+    color: white;
+    line-height: 1.02rem;
+    text-align: center;
+    border-radius: 12px;
+    margin-top: 0.3rem;
+    background-color: #ff9900;
+    font-size: 0.16rem;
+}
+input{
+    background-color: inherit;
+}

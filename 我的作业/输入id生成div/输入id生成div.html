@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div {
+				height: 100px;
+				width: 100px;
+				background-color: deeppink;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		</style>
+	</head>
+
+	<body>
+		<input type="text" name="" id="" value="" placeholder="请输入id" /><button>点击生成</button>
+	</body>
+	<script type="text/javascript">
+		var inp = document.getElementsByTagName('input')[0]
+		var btn = document.getElementsByTagName('button')[0]
+          //按钮事件
+		btn.onclick = function() {
+			var reg = /^[a-zA-Z][a-zA-Z0-9\-]/
+			//判断input里面的值跟正则匹不匹配
+			if(reg.test(inp.value) == true) {
+				//获取inp里面的值作为 div的id
+				if(document.getElementById(inp.value) == undefined) {
+					//生成一个div
+					function clerDiv(id) {
+						this.divBox = ''
+						this._id = id
+						this.box = function() {
+							this.divBox = document.createElement('div')
+							this.divBox.id = this._id
+							document.body.appendChild(this.divBox)
+						}
+
+						this.box()
+						//继承clerDiv给他添加一个移动函数
+						clerDiv.prototype.move = function() {
+							var div = this.divBox
+                             //鼠标按下
+							div.onmousedown = function(ev) {
+								var ev = window.event || ev
+								var x = ev.clientX - div.offsetLeft
+								var y = ev.clientY - div.offsetTop
+									  //鼠标移动
+									  console.log(x+'--'+y)
+								div.onmousemove = function(ev) {
+									var ev = window.event || ev
+									//获取屏幕的高宽
+									var clientH = document.documentElement.clientHeight
+									var clientW = document.documentElement.clientWidth
+									var divH = clientH - div.offsetHeight
+									var divW = clientW - div.offsetWidth
+									//console.log(clientH)
+									//鼠标移动的坐标减去鼠标按下的坐标
+									var mouseX = ev.clientX - x
+									var mouseY = ev.clientY - y
+									//判断是否碰壁
+									mouseX = mouseX <= 0 ? 0 : mouseX
+									mouseY = mouseY <= 0 ? 0 : mouseY
+									mouseY = mouseY >= divH ? divH : mouseY
+									mouseX = mouseX >= divW ? divW : mouseX
+									//给div样式拼接像素
+									div.style.top = mouseY + 'px'
+									div.style.left = mouseX + 'px'
+									console.log('左' + div.style.left + '__' + div.style.top + '上')
+
+								}
+
+							}
+							//鼠标抬起清除鼠标移动样式
+							div.onmouseup = function(ev) {
+								var ev = window.event || ev
+								div.onmousemove = ''
+
+							}
+						}
+					}
+					//声明一个实例对象拿取输入框的值
+					var obj = new clerDiv(inp.value)
+					//执行move函数
+					obj.move()
+				} else {
+					alert('id已存在！')
+				}
+
+			} else {
+				
+				alert('请输入已字母开头+数字组合！')
+			}
+			console.log(reg.test(inp.value) == true)
+		}
+	</script>
+
+</html>

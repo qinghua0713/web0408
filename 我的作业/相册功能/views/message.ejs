@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <%= msg %>,<span>5</span>秒后自动返回<a href="/">首页</a>
+</body>
+<script>
+ var span = document.getElementsByTagName('span')[0]
+
+  var timer = setInterval(() => {
+          span.innerHTML -= 1
+          if(span.innerHTML == 0){
+              clearInterval(timer)
+              location.href = '/'
+          }
+  }, 1000);
+
+</script>
+</html>

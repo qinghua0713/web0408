@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    img{
+        width: 150px;
+        height: auto;
+    }
+    </style>
+</head>
+<body>
+    <h1>相册详情</h1>
+    <% for(var i = 0; i < arr.length; i++){ %>
+        <img src="<%= path %>/<%= arr[i] %>"/>
+    <%} %>
+    <% if(arr.length == 0){ %>
+        <span>当前相册还没有上传图片</span>
+   <% } %>
+</body>
+
+</html>

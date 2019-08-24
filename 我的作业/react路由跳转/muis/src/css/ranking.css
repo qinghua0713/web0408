@@ -1,0 +1,21 @@
+.mod-topic{
+    margin: 10px;
+}
+.mod-topic li{
+    margin-bottom: 10px;
+    background: #fff;
+    display: flex;
+}
+.topic-media{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+.topic-media img{
+   width: 100%;
+
+}
+.topic-info{
+    padding: 10px 15px;
+    line-height: 20px;
+}

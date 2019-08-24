@@ -1,0 +1,166 @@
+body,html{
+    background: #f1f1f1;
+    height: 100%;
+}
+.logonPage{
+    height: 100%;
+    overflow: hidden;
+}
+.clearfloat:after{
+    content: '';
+    height: 0;
+    display: block;
+    clear: both;
+     visibility: hidden;
+}
+.logo1{
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 50px;
+
+}
+.logo img{
+    width: 100%;
+}
+.logon-cont{
+    width: 400px;
+    padding: 50px 50px 30px;
+    background: #fff;
+    position: absolute;
+     top: 100px;
+     left: 0;
+     right: 0;
+     margin: auto;
+     border-radius: 4px;
+     box-shadow: 1px 1px 6px #ccc
+}
+.from-tab{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.from-tab i,a{
+    padding: 10px;
+    margin: 0;
+    font-size: 18px;
+    color: #969696;
+}
+.current-logon{
+    color: #ea6f5a !important;
+    font-weight: 700;
+    border-bottom: 2px solid #ea6f5a;
+}
+.logon-write{
+    position: relative;
+}
+.icon-yonghu{
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    color: #969696;
+}
+.icon-mima{
+    position: absolute;
+    top: 65px;
+    left: 12px;
+    color: #969696;
+}
+#user,#psd{
+ width: 100%;
+ height: 50px;
+ padding: 4px 12px 4px 35px ;
+ background-color: hsla(0,0%,71%,.1);
+ border: 1px solid #c8c8c8;
+  outline: none;
+}
+#user{
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+#psd{
+    border-top: none;
+
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.logon-option {
+    margin: 15px 0;
+}
+.logon-option span{
+    color: #969696;
+
+}
+.logonIssue{
+    float: right;
+}
+#logon-btn{
+    width: 100%;
+    padding: 9px 18px;
+    background: #187cb7;
+    margin-top: 18px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+ 
+}
+.elseTitle{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+.elseTitle i{
+     width: 60px;
+     display: inline-block;
+      height: 1px;
+      background: #b5b5b5;
+      margin-bottom: 4px;
+}
+.elseTitle span{
+    color: #b5b5b5;
+    margin: 0 22px;
+}
+.elseItem{
+    text-align: center;
+}
+.icon-weibo{
+    color: #ea6f5a;
+}
+.icon-weixin{
+    color: green;
+}
+.icon-douban{
+    color: rgb(2, 241, 102);
+}
+.icon-qq{
+    color: rgb(0, 102, 255);
+}
+.elseItem i{
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 26px;
+}
+.loginMsg{
+    width: 160px;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+    position: fixed;
+    padding: 6px 12px;
+    line-height: 48px;
+    text-align: center;
+    top: 20px;
+     left: 0;
+     right: 0;
+     margin: auto;
+     box-shadow: 1px 1px 6px #ddd;
+     font-weight: 100;
+     font-size: 14px;
+     color: #fff;
+     opacity: 0;
+     transition: all 1s;
+}

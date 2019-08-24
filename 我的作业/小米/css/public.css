@@ -1,0 +1,201 @@
+@charset "UTF-8";
+.w{
+    width: 1266px;
+    margin: 0 auto;
+    position: relative;
+
+}
+.xm-topNav{
+    width: 100%;
+    height: 40px;
+    background: #333;
+    line-height: 40px;
+
+}
+.xm-topNav .leftNav li{
+    float: left;
+    margin-left: 14px;
+}
+.xm-topNav .rightNav li{
+    float: left;
+    margin-left: 14px;
+}
+.rightNav{
+    float: right;
+}
+.container{
+    width: 100%;
+    
+}
+.icon-icongouwuche{
+    background: black;
+    display: inline-block;
+ 
+}
+.xm-topNav li:hover a{
+
+    color: white;
+}
+.xm-topNav a:hover span{
+    background-color: white;
+    color: orange;
+    
+
+}
+.rightNav .mouse-block:hover p{
+    display: block;
+}
+.rightNav li .selected{
+     height: 100px;
+    width: 330px;
+    box-shadow: 0 2px  2px 2px gainsboro;
+    position: absolute;;
+    right: 0; 
+    display: none;
+    text-align: center;
+z-index: 2;
+background: white;
+} 
+.center-nav{
+    width: 100%;
+    background: pink;
+
+}
+.mian-nav{
+    height: 100px;
+}
+.mian-nav .mi-logo{
+    width: 220px;
+    height: 100px;
+    float: left;
+}
+
+.mi-logo a{
+    height: 49px;
+    background: orange;
+    display:inline-block;
+    margin-top: 25px;
+}
+.nav-head a{
+    float: left;
+    line-height: 100px;
+    font-size: 16px;
+    color: black;
+    margin-left: 20px;
+
+}
+.center-nav .nav-head{
+    width: 640px;
+    height: 100px;
+    float: left;
+    line-height: 100px;
+}
+.nav-head .nav-list:hover a{
+    color: orange;
+}
+.inputbox{
+    height: 100px;
+      width: 330px;
+      position: relative;
+      float: right;
+      line-height: 100px;
+      z-index: 1;
+}
+.inputbox input{
+    height: 40px;
+    width: 220px;
+    border: 1px solid #999;
+}
+.inputbox .search-keyword{
+position: absolute;
+top: 3px;
+right: 120px;
+}
+.inputbox .keyword{
+    font-size: 12px;
+    background: #999;
+    color: #222;
+}
+.search-keyword .c:hover .keyword{
+    background: orange;
+}
+.inputbox .mag{
+    font-size: 26px; 
+    z-index: 4;
+    height: 26px;
+    color: black;
+    position: absolute;
+}
+
+.inputbox .cearch-btn{
+    width: 40px;
+    height: 42px;
+    border: 1px solid #999;
+    background: white;
+    position: absolute;
+    top: 30px;  
+    font-size: 0;
+    right: 68px;
+
+}
+
+.cearch-btn:hover {
+    background: orange;
+    z-index: 3;
+}
+.font{
+    color: orange;
+    font-size: 14px;
+    font-weight: 100;
+}
+.config{
+    font-size: 14px;
+    color: #666;
+    font-family: "微软雅黑","宋体",sans-serif;
+}
+ .new-product::before{
+    content: attr(data-naw);
+    width: 60px;
+    height: 20px;
+    background: green;
+    display: inline-block;
+      color: white;
+}
+.rtp::before{
+    content: attr(data-naw);
+    width: 60px;
+    height: 20px;
+    background: red;
+    display: inline-block;
+      color: white;
+}
+.del{
+    color: #666;
+    font-size: 14px;
+    font-family: "微软雅黑","宋体",sans-serif;
+    margin-left: 5px;
+}
+.box-shadow:hover{
+    box-shadow: 0 0 6px 6px gray;
+}
+.bottom-hidden{
+    width: 234px;
+    height: 100px;
+    background: rgb(243,107,17);
+    position: absolute;
+    bottom: 0;
+    transform: scale(1,0);
+    transform-origin: bottom;
+    transition: transform 0.3s linear;
+    left: 0;
+
+
+}
+.box-shadow:hover .bottom-hidden{
+    transform: scale(1,1);
+    transform-origin: bottom;
+    transition: transform 0.3s linear;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}

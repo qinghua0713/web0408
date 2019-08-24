@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- device设备 device-width设备宽度
+    initial-scale = 1 不要缩放
+    -->
+    <meta name="viewport" content="width=device-width ,initial-scale=1,maximum-scale=1,
+    user-scalable=no">
+    <!-- （user-scalable = no 属性能够解决 iPad 切换横屏之后触摸才能回到具体尺寸的问题。 ） -->
+
+    <!-- ie视口设置 -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    /* 媒体查询是h5提供查询条件语句  查询设备的屏幕宽度   条件 ————-》 查询当前设备是否符合条件
+    如果符合执行相应样式 如果不符合 不执行相应样式
+
+    @media 设备类型 （屏幕screen） and (条件1) and (条件2) and.... {
+
+    }
+    
+    */
+    /* 
+    1:大屏设备下 >1200px 背景色红色   
+    2：中屏  992px-1200px 背景色蓝色
+    3: 小屏 768px-992px 紫色
+    4:超小屏  <768px 黄色
+    */
+    /* 大于1200px 才满足 大屏 */
+    @media screen and (min-width:1200px) {
+          .box {
+              background-color: red;
+          }
+          .box1 {
+              width: 600px;
+              height: 200px;
+              background-color: aqua;
+          }
+    }
+    /* 中屏 */
+    @media screen and (max-width:1200px) and (min-width:992px) {
+          .box {
+              background-color: blue;
+          }
+          .box1 {
+              width: 500px;
+              height: 200px;
+              background-color: aqua;
+          }
+    }
+    @media screen and (min-width:768px) and (max-width:992px) {
+          .box {
+              background-color: purple;
+          }
+          .box1 {
+              width: 300px;
+              height: 200px;
+              background-color: aqua;
+          }
+    }
+    @media screen and (max-width:768px) {
+          .box {
+              background-color: yellow;
+          }
+          .box1 {
+
+              display: none;
+          }
+    }
+    
+    
+    </style>
+</head>
+<body>
+    <div class="box"  style="width:100%;height:400px">
+            <div class="box1"></div>
+        </div>
+  
+</body>
+</html>

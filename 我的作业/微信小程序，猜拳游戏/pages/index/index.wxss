@@ -1,0 +1,77 @@
+/* pages/index/index.wxss */
+/* 整体的背景颜色 */
+page{
+  background: rgb(250,231,56) 
+}
+
+.winTxt{
+  text-align: center;
+  font-size:15px;
+  line-height: 100rpx;
+  color:red;
+}
+
+.winAg{
+
+  display: flex;
+  justify-content: center;
+  margin-top: 100rpx;
+
+}
+
+.winAg .jieguo{
+
+  width: 200rpx;
+  height: 200rpx;
+  text-align: center;
+  line-height: 200rpx;
+  font-size:15px;
+  color:red;
+  /* border:1px solid red; */
+
+}
+
+.winAg image{
+
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.userBj{
+
+  width:650rpx;
+  height: 700rpx;
+  background: #fff;
+  margin: 50rpx  auto 0;
+}
+
+.userBj text{
+
+  display: block;
+  text-align: center;
+  font-size:15px;
+  line-height: 100rpx;
+}
+
+.chuquan{
+
+  text-align: center;
+  padding: 30rpx 0;
+
+}
+
+.chuquan image{
+
+  width: 180rpx;
+  height: 180rpx;
+  border-radius:50%;
+  margin:0  5px;
+
+}
+
+.btn{
+
+  width:90%;
+  background: rgb(250,231,56) ;
+  margin-top:40rpx;
+}

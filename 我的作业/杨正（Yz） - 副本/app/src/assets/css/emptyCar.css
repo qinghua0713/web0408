@@ -1,0 +1,21 @@
+body,html{
+    font-size: 0.14rem;
+
+}
+
+.emptyCar-page{
+    height: 9.78rem !important;
+}
+.emptyCar-page .mian-emptyCar{
+  width: 7.5rem;
+  text-align: center;
+    margin-top: 50%;
+}
+.mian-emptyCar img{
+    height: 0.7rem;
+    width: 0.7rem;
+      margin-bottom: 0.4rem;
+}
+.mian-emptyCar  p{
+    color: #333;
+}

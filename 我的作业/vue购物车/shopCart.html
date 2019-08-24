@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		body,
+		html {
+			background-color: whitesmoke;
+		}
+
+		.shopBox {
+			width: 425px;
+			height: 375px;
+			background-color: white;
+			margin: 0 auto;
+			position: relative;
+		}
+
+		.shopLine {
+			/*background-color: pink;*/
+			height: 70px;
+			padding: 15px;
+			position: relative;
+			box-shadow: 3px 3px 3px #dddddd;
+			margin-bottom: 3px;
+		}
+
+		.shopLine img {
+			float: left;
+			width: 70px;
+			height: 70px;
+		}
+
+		.inputBox {
+			float: left;
+			margin-top: 30px;
+			margin-right: 10px;
+		}
+
+		.shopDetails {
+			float: left;
+			margin-left: 20px;
+		}
+
+		.shopDetails span {
+			display: block;
+			margin-bottom: 5px;
+		}
+
+		.shopDetails span:nth-child(2) {
+			color: gray;
+			font-size: 13px;
+			margin: 8px 0;
+		}
+
+		.shopDetails span:nth-child(3) {
+			color: #e4393e;
+			font-size: 16px;
+		}
+
+		.shopCalc {
+			position: absolute;
+			bottom: 10px;
+			right: 20px;
+			border: 1px solid #9A9A9A;
+			line-height: 30px;
+			text-align: center;
+			border-radius: 5px;
+		}
+
+		.calcDown,
+		.calcUp {
+			display: inline-block;
+			width: 30px;
+			height: 30px;
+			cursor: pointer;
+		}
+
+		.calcNum {
+			width: 28px;
+			height: 28px;
+			border: none;
+			text-align: center;
+			border-left: 1px solid #9A9A9A;
+			border-right: 1px solid #9A9A9A;
+			outline: none;
+		}
+
+		.shopCart {
+			position: absolute;
+			width: 100%;
+			height: 70px;
+			background-color: pink;
+			bottom: 0;
+			left: 0;
+		}
+
+		.shopCon {
+			position: relative;
+			padding: 0 15px;
+		}
+
+		.totalPrices {
+			float: left;
+			margin-left: 50px;
+			line-height: 80px;
+		}
+
+		.close {
+			height: 70px;
+			width: 120px;
+			background: orange;
+			text-align: center;
+			line-height: 70px;
+			position: absolute;
+			right: 0px;
+			color: white;
+			font-size: 13px;
+			font-weight: 100;
+		}
+
+		.close:hover {
+			cursor: pointer;
+		}
+
+		i {
+			font-style: normal;
+		}
+
+		.allPrices {
+			color: orangered;
+		}
+	</style>
+</head>
+
+<body>
+	<!--
+			1、全选按钮的监听
+			2、每一个商品中的复选框 都应该被监听
+			3、单个商品的数量的加法
+			4、单个商品的数量的减法
+			5、数量的额手动输入
+			6、总价的联动
+		-->
+
+
+	<div id="app">
+		<div class="shopBox">
+			<!--第一个商品-->
+
+			<div class="shopLine" v-for='item,index in cart'>
+				<div class="inputBox">
+					<input v-model="item.isChecked" @change="sigChange" class="sigChecked" type="checkbox" />
+				</div>
+				<img :src="item.thumbnail" />
+				<div class="shopDetails">
+					<span>{{item.name}}</span>
+
+					<span>¥<label class="sigPrices">{{item.reduct_price}}</label></span>
+				</div>
+				<div class="shopCalc">
+					<span @click='sub(index)' class="calcDown">-</span>
+					<input class="calcNum" @change='calcNum(index)' v-model.number.lazy='item.num' />
+					<span @click='add(index)' class="calcUp">+</span>
+				</div>
+			</div>
+			<!--第二个商品-->
+
+			<!--底部-->
+			<div class="shopCart">
+				<div class="shopCon">
+					<div class="inputBox">
+						<input v-model="allChecked" @change="allChange" class="allChecked" type="checkbox" />全选
+					</div>
+					<div class="totalPrices">
+						总价:<span class="allPrices">&nbsp;{{total}}</span>
+					</div>
+					<div class="close">
+						<span>去结算(<i>{{piece}}</i>件)</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</body>
+<script src="./js/vue.js"></script>
+<script type="text/javascript">
+	var app = new Vue({
+		el: "#app",
+		data: {
+			allChecked: false,
+			num: 0,
+			cart: [{
+				"id": "00001",
+				"name": "施华蔻伊采染发膏60ml",
+				"thumbnail": "https:\/\/fjlyl.xyz\/assets\/hairDye\/products (1).jpg",
+				"reduct_price": "26",
+				"num": 1,
+				"isChecked": false
+			}, {
+				"id": "00002",
+				"thumbnail": "https:\/\/fjlyl.xyz\/assets\/hairDye\/products (2).jpg",
+				"name": "施华蔻伊采染发膏100ml",
+				"reduct_price": "69",
+				"num": 1,
+				"isChecked": false
+			}]
+		},
+		methods: {
+			sub: function (index) {
+				this.cart[index].num > 0 ? this.cart[index].num-- : this.cart[index].num
+			},
+			add: function (index) {
+				this.cart[index].num++
+			},
+			allChange: function () {
+				for (var i = 0; i < this.cart.length; i++) {
+					this.cart[i].isChecked = this.allChecked
+				}
+			},
+			sigChange: function () {
+				var checked = true;
+				for (var i = 0; i < this.cart.length; i++) {
+					if (this.cart[i].isChecked == false	) {
+						checked = this.cart[i].isChecked
+
+					}
+
+				}
+				this.allChecked = checked
+			},
+			calcNum: function (index) {
+				var inpNum = parseInt(this.cart[index].num)
+				inpNum = isNaN(inpNum) ? 1 : inpNum
+				inpNum = inpNum < 0 ? 0 : inpNum
+				this.cart[index].num = inpNum
+
+			}
+
+
+		},
+		computed: {
+			total: function () {
+				var num = 0;
+				for (var i = 0; i < this.cart.length; i++) {
+					if (this.cart[i].isChecked) {
+						num += parseFloat(this.cart[i].reduct_price) * this.cart[i].num
+					}
+				}
+				console.log(num)
+				return num;
+
+			},
+			piece: function () {
+				var num1 = 0
+				for (var i = 0; i < this.cart.length; i++) {
+					if (this.cart[i].isChecked) {
+						num1 += this.cart[i].num
+					}
+
+				}
+				return num1
+			}
+		},
+
+	})
+
+</script>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>上传相册</h1>
+    <form action="/uploadpic" method="POST" enctype="multipart/form-data">
+     <input type="file" required name="upPic"><br>
+     <label>请选择上传的相册：</label>
+     <select name="picName" class="picName">
+            
+            <% for(var i=0;i<arr.length;i++){%>
+                <option value="<%= arr[i]%>"><%= arr[i] %></option>
+           <% }%>
+     </select><br>
+     <input type="submit" value="上传"/>
+    </form>
+</body>
+<script src="/static/jquery-3.4.1.js"></script>
+<script>
+//  $.ajax({
+//      type:'get',
+//      url:'http://localhost:8000/getPicName',
+//      async:true,
+//      success:function(res){
+//          var str = '';
+//          for(var i = 0; i < res.length; i++){
+//              str+='<option value="'+res[i]+'">'+res[i]+'</option>'
+//          }
+//          $('select').html(str)
+//      },
+//      error:function(err){
+//          throw err
+//      }
+//  })
+
+</script>
+</html>

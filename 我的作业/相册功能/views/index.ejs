@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        a{
+            text-decoration: none;
+        }
+    .uppic, .newpic{
+         color: blue;
+         width: 100px;
+         height: 33px;
+         border: 1px solid  #ddd;
+         background-color: #fff;
+        margin-left: 16px;
+        border-radius: 6px;
+        outline: none;
+        display: inline-block;
+        line-height: 33px;
+        text-align: center;
+   
+     }
+     button:hover{
+         cursor: pointer;
+     }
+     h1{
+         font-size: 22px;
+       margin-bottom: 16px;
+     }
+     .photoOne{
+         float: left;
+         width: 100px;
+         height: 100px;
+         line-height:100px;
+         border: 1px solid #ccc;
+         text-align: center;
+         margin-left: 16px;
+
+     }
+    </style>
+</head>
+<body>
+    <h1>首页</h1>
+   <a class="uppic" href="/uppic">上传图片</a>
+   <a class="newpic" href="/mkPic">创建相册</a>
+    <h1>相册列表</h1>
+    <div class="piclist">
+        <div class="picList">
+        	<% for(var i=0;i<arr.length;i++){ %>
+            <a class="photoOne" href="/defPic/<%= arr[i] %>"><%= arr[i]%></a>
+          <% } %>
+        </div>
+
+    </div>
+    
+</body>
+<script src="/static/jquery-3.4.1.js"></script>
+<script>
+//  $.ajax({
+//      type:"get",
+//      url:"http://localhost:8000/getPicName",
+//      async:true,
+//      success:function(res){
+//          console.log(res)
+//          var str = '';
+//          for(var i = 0; i < res.length; i++){
+//              str+='<a class="photoOne" href="/defPic/'+res[i]+'">'+res[i]+'</a>'
+//          }
+//          $('.piclist').html(str)
+//      },
+//      error:function(error){
+//          throw error
+//      }
+
+//  })
+
+</script>
+
+</html>

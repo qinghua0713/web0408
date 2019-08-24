@@ -1,0 +1,34 @@
+<div id="app">
+  <div class="shopBox" >
+    <!--第一个商品-->
+    <div class="shopLine" *ngFor='let item of cart;let i = index'>
+      <div class="inputBox">
+        <input class="sigChecked" type="checkbox" (change)='sigcheck()' [(ngModel)]='item.isChecked' />
+      </div>
+      <img [src]='item.thumbnail' />
+      <div class="shopDetails">
+        <span>{{item.name}}</span>
+        <span>规格:50克</span>
+        <span>¥<label class="sigPrices">{{item.reduct_price}}</label></span>
+      </div>
+      <div class="shopCalc">
+        <span  class="calcDown" (click)='subNum(i)'>-</span>
+        <input type="number" (blur)='keyups($event,i)' [(ngModel)]='item.num' class="calcNum" [value]="item.num" />
+        <span  class="calcUp" (click)='addNum(i)'>+</span>
+      </div>
+    </div>	
+   
+    <!--底部-->
+    <div class="shopCart">
+      <div class="shopCon">
+        <div class="inputBox">
+          <input class="allChecked" [(ngModel)]='allchange' (change)='allcheck()' type="checkbox" />全选
+        </div>
+        <div class="totalPrices">
+          总价:¥ <span class="allPrices">{{total}}</span>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
