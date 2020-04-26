@@ -74,6 +74,34 @@
 					"id": -1,
 					"name": "pages/discover/discover",
 					"pathName": "pages/discover/discover",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/problemDetails/problemDetails",
+					"pathName": "pages/problemDetails/problemDetails",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/answer/answer",
+					"pathName": "pages/answer/answer",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/topicColumn/topicColumn",
+					"pathName": "pages/topicColumn/topicColumn",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/postDetails/postDetails",
+					"pathName": "pages/postDetails/postDetails",
 					"scene": null
 				}
 			]

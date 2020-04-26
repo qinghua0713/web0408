@@ -288,9 +288,7 @@ margin-left: 16rpx;
   border-left: solid 1rpx #dddddd;
   border-right: solid 1rpx #dddddd;
 }
-.zan_color{
-  color: #a6d9e1;
-}
+
 /* 结束 */
 .wen_da{
   display: -webkit-box;

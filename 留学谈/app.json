@@ -3,7 +3,11 @@
     "pages/index/index",
     "pages/my/my",
     "pages/message/message",
-    "pages/discover/discover"
+    "pages/discover/discover",
+    "pages/problemDetails/problemDetails",
+    "pages/answer/answer",
+    "pages/topicColumn/topicColumn",
+    "pages/postDetails/postDetails"
   ],
   "window": {
     "backgroundTextStyle": "light",

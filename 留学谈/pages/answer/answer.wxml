@@ -1,0 +1,169 @@
+<!-- pages/answer/answer.wxml -->
+<view class="answer">
+        <!-- 下拉显示置顶问题 -->
+    <view class="top_fixed">
+        <view class="problem_title">
+            <view class="left_problem">
+                <view class="ask">问</view>
+                <text class="txt_title">英国什么城市好玩？</text>
+            </view>
+            <view class="right_answer">
+                <image src="../../static/image/search.png" />
+                <text class="dot_three">···</text>
+            </view>
+        </view>
+    </view>
+
+    <view class="ask_container">
+        <view class="is_show">
+                <view class="top_search">
+        <image class="logo" src="../../static/image/logo_2.png" />
+        <view class="search-box">
+            <input type="text" placeholder="SEARCH" />
+            <image src="../../static/image/search.png" />
+        </view>
+        <view class="dot_three pd_16">···</view>
+    </view>
+            <view class="left_problem">
+                <view class="ask">问</view>
+                <text class="txt_title">英国什么城市好玩？</text>
+            </view>
+            <view class="article_txt mar_top_20">
+                英国最好玩的地方是哪里？可否详细介绍一下呢？英国最好玩的
+地方是哪里？可否详细介绍一下呢???
+            </view>
+            <view class="flow_list">
+                <view class="flow_item">
+                    <text>1.1万</text>
+                    <text>关注</text>
+                </view>
+                <view class="flow_item">
+                    <text>34</text>
+                    <text>评论</text>
+                </view>
+                <view class="flow_item">
+                    <text>5400</text>
+                    <text>浏览</text>
+                </view>
+            </view>
+            <view class="label_list">
+                <view class="label_item">英国</view>
+                <view class="label_item">格拉斯哥大学</view>
+            </view>
+            <view class="options">
+                <view class="options_item">
+                    <image src="../../static/image/aixin.png" />
+                    <text>收藏问题</text>
+                </view>
+                <view class="options_item">
+                    <image src="../../static/image/bianji.png" />
+                    <text>我来回答</text>
+                </view>
+                <view class="options_item">
+                    <image src="../../static/image/wenti_yellow.png" />
+                    <text>关注问题</text>
+                </view>
+            </view>
+        </view>
+        <view class="card_topic">
+            <view class="topic_info_left">
+                <image src="../../static/image/taolun_tx.png" />
+                <view class="topic_txt">
+                    <text class="topic_title">进入我们的话题讨论区...</text>
+                    <text class="topic_context">每日打卡，赶紧进入话题讨论区吧...</text>
+                </view>
+            </view>
+            <view class="topic_info_right">
+                <view class="topic_right_image">
+                    <image src="../../static/image/taolun_tx.png" />
+                    <image src="../../static/image/taolun_tx.png" />
+                    <image src="../../static/image/taolun_tx.png" />
+                </view>
+                <image class="jiantou_right" src="../../static/image/jiantou_you.png" />
+            </view>
+        </view>
+        <view class="answer_container">
+            <view class="sorting">
+                <view class="Question_answer">回答</view>
+                <view class="sorting_way">
+                    <text>默认排序</text>
+                    <image src="../../static/image/xiala_3.png" />
+                </view>
+            </view>
+            <view class="answer_list">
+                <view class="answer_item">
+                    <view class="context line_4">
+                        这是一篇不一样的干货篇！有些东西你想都可能没想过要用到！
+当前国内疫情有所减缓！！ 可是英国疫情加重！好多东西后悔
+没有带过来伯明翰，为了不让来英国的同学陷入我这样尴尬的处
+境，我决定分享一些值得带！不对是一定要带的东西，拿本本...
+                    </view>
+                    <view class="published_status">
+                        <view class="left_status">
+                            <image src="../../static/image/taolun_tx.png" />
+                            <text class="user_name">Green</text>
+                            <text class="published_time">刚刚发表</text>
+                        </view>
+                        <view class="right_status">
+                            <view class="right_status_item">
+                                <image src="../../static/image/zhuanfa.png" />
+                                <text class="">888</text>
+                            </view>
+                            <view class="right_status_item">
+                                <image src="../../static/image/dianzan.png" />
+                                <text class="zt_color">2000</text>
+                            </view>
+                            <view class="right_status_item">
+                                <image src="../../static/image/liuyan.png" />
+                                <text class="">10</text>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="answer_item">
+                    <view class="context line_4">
+                        这是一篇不一样的干货篇！有些东西你想都可能没想过要用到！
+当前国内疫情有所减缓！！ 可是英国疫情加重！好多东西后悔
+没有带过来伯明翰，为了不让来英国的同学陷入我这样尴尬的处
+境，我决定分享一些值得带！不对是一定要带的东西，拿本本...
+                    </view>
+                    <view class="published_status">
+                        <view class="left_status">
+                            <image src="../../static/image/taolun_tx.png" />
+                            <text class="user_name">Green</text>
+                            <text class="published_time">刚刚发表</text>
+                        </view>
+                        <view class="right_status">
+                            <view class="right_status_item">
+                                <image src="../../static/image/zhuanfa.png" />
+                                <text class="">888</text>
+                            </view>
+                            <view class="right_status_item">
+                                <image src="../../static/image/dianzan.png" />
+                                <text class="zt_color">2000</text>
+                            </view>
+                            <view class="right_status_item">
+                                <image src="../../static/image/liuyan.png" />
+                                <text class="">10</text>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <!-- 底部定位条 -->
+    <view class="bottom_fixed">
+        <view class="left_problem">
+            <view class="problem_item">
+                <image src="../../static/image/bottom_sc.png" />
+                <text>收藏问题</text>
+            </view>
+            <view class="problem_item">
+                <image src="../../static/image/bottom_wtpng.png" />
+                <text>关注问题</text>
+            </view>
+        </view>
+        <view class="Question_answer">问答</view>
+    </view>
+</view>

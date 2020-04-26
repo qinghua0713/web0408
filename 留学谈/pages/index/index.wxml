@@ -73,7 +73,7 @@
 				 </view>
                  <view class="status_item">
 					 <image  src="../../static/image/dianzan.png" />
-					  <text class="zan_color">2000</text>
+					  <text class="zt_color">2000</text>
 				 </view>
                  <view class="status_item">
 					 <image  src="../../static/image/liuyan.png" />

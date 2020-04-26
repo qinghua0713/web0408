@@ -1,0 +1,234 @@
+<!-- pages/problemDetails/problemDetails.wxml -->
+<view class="problemDetails">
+    <!-- 下拉显示置顶问题 -->
+    <view class="top_fixed">
+        <view class="problem_title">
+            <view class="left_problem">
+                <view class="ask">问</view>
+                <text class="txt_title">英国什么城市好玩？</text>
+            </view>
+            <view class="right_answer">
+                <text class="my_answer">我来回答</text>
+                <text class="dot_three">···</text>
+            </view>
+        </view>
+        <view class="view_answer">
+            <text>查看全部10个回答</text>
+            <image src="../../static/image/jiantou_you.png" />
+        </view>
+    </view>
+    <view class="top_search">
+        <image class="logo" src="../../static/image/logo_2.png" />
+        <view class="search-box">
+            <input type="text" placeholder="SEARCH" />
+            <image src="../../static/image/search.png" />
+        </view>
+        <view class="dot_three pd_16">···</view>
+    </view>
+    <view class="problem_list">
+        <view class="left_problem">
+            <view class="ask">问</view>
+            <text class="txt_title">英国什么城市好玩？</text>
+        </view>
+        <view class="label_list">
+            <view class="label_item">英国</view>
+            <view class="label_item">格拉斯哥大学</view>
+        </view>
+        <view class="user_info">
+            <image class="user_tx" src="../../static/image/taolun_tx.png" />
+            <view class="right_info">
+                <view class="right_top">
+                    <text class="user_name">Green</text>
+                    <text class="publish_time">刚刚发表</text>
+                </view>
+                <view class="right_bottom">
+                    <image src="../../static/image/guanzhu.png" />
+                    <text>关注</text>
+                </view>
+            </view>
+        </view>
+        <view class="article">
+            <view class="article_txt">
+                英国最好玩的地方是哪里？可否详细介绍一下呢？英国最好玩的
+地方是哪里？可否详细介绍一下呢...
+                <text class="open_details">展开详情>></text>
+            </view>
+        </view>
+        <view class="view_answer_btn">
+            <text>查看全部10个回答</text>
+            <image src="../../static/image/jiantou_you.png" />
+        </view>
+        <view class="btn_container">
+            <view class="btn_item">
+                <image src="../../static/image/aixin.png" />
+                <text>收藏问题</text>
+            </view>
+            <view class="btn_item">
+                <image src="../../static/image/bianji.png" />
+                <text>我来回答</text>
+            </view>
+        </view>
+    </view>
+    <view class="watching_list">
+        <view class="dispatch_user">
+            <view class="dispatch_user_info">
+                <view class="dispatch_user_left_info">
+                    <image src="../../static/image/taolun_tx.png" />
+                    <text>昵称</text>
+                </view>
+                <view class="guanzhu_btm">
+                    <image src="../../static/image/guanzhu_2.png" />
+                    <text>关注</text>
+                </view>
+            </view>
+            <view class="context">
+                看到这个问题，脑海中浮现的第一个城市是——布莱顿！这座清
+                新又“浪荡”的城市，从建立之初便是伦敦人最爱寻欢作乐的城市
+                怡人的海风、独特的鹅卵石海滩、异域风情的宫殿、不胜枚举的
+                艺术馆和丰富多样的活动，让它直到今天都是英国最有趣的旅行
+                目的地之一。
+            </view>
+        </view>
+        <view class="watching_item">
+            <view class="watching_title">看点1：东方风情的英皇阁</view>
+            <view class="context">
+                热爱享乐的乔治四世将皇家行宫英皇阁Royal Pavilion建造得如
+同一座中国宫殿。建筑的外观由于对于东方混杂的想象，看起来
+像是座泰姬陵，但内部每一个房间中几乎都可发现形式各异的
+“中国”龙，而那造型独特的竹节楼梯、莲花灯更是让人啧啧称奇
+            </view>
+            <image class="wenti_tietu" src="../../static/image/context_image.png" />
+            <view class="context">
+                冬至的时候，另外一个独一无二的节日“烧钟节”便会开幕。旨在
+抵制过度商业化的圣诞节。人们会用白纸和柳枝制作成一个个白
+色的灯笼，并用黑色的颜料在灯笼上许下新年的愿望或过去的遗
+憾，然后丢进火中燃烧。
+冬至的时候，另外一个独一无二的节日“烧钟节”便会开幕。旨在
+抵制过度商业化的圣诞节。人们会用白纸和柳枝制作成一个个白
+色的灯笼，并用黑色的颜料在灯笼上许下新年的愿望或过去的遗
+憾，然后丢进火中燃烧。
+            </view>
+            <view class="publish_time_info">编辑于 2018-05-03・著作权归作者所有</view>
+            <view class="comment_list">
+                <text class="comment_title">评论</text>
+                <view class="comment_item">
+                    <view class="comment_user_info">
+                        <view class="left_comment_user_info">
+                            <image src="../../static/image/taolun_tx.png" />
+                        </view>
+                        <view class="right_comment_praise">
+                            <view class="right_top_comment">
+                                <text class="comment_user_name">昵称</text>
+                                <view class="right_praise_num">
+                                    <image src="../../static/image/dianzan.png" />
+                                    <text>2,254</text>
+                                </view>
+                            </view>
+                            <view class="context">冬至的时候，另外一个独一无二的节日“烧钟节”便会
+开幕了。</view>
+                        </view>
+                    </view>
+                </view>
+                <view class="view_arr">查看全部2,264条评论>></view>
+                <view class="comment_info">
+                    <view class="left_comment">
+                        <image src="../../static/image/taolun_tx.png" />
+                        <input placeholder="添加评论..." />
+                    </view>
+                    <view class="right_cz">
+                        <view class="cz_item">
+                            <image src="../../static/image/zhuanfa_gray.png" />
+                            <text class="">转发5531</text>
+                        </view>
+                        <view class="cz_item">
+                            <image src="../../static/image/dianzan_gray.png" />
+                            <text class="">点赞</text>
+                        </view>
+                        <view class="cz_item">
+                            <image src="../../static/image/pinglun_gray.png" />
+                            <text class="">评论2264</text>
+                        </view>
+                    </view>
+                </view>
+                <view class="view_arr_answer">查看全部9个答案>></view>
+                <view class="info_card">
+                    <view class="card_top_info">
+                        <view class="card_top_left">
+                            <image src="../../static/image/taolun_tx.png" />
+                            <view class="left_childer">
+                                <text class="card_user_name">昵称</text>
+                                <text class="user_details_info">详细资料></text>
+                            </view>
+                        </view>
+                        <view class="guanzhu_btm">
+                            <image src="../../static/image/guanzhu_2.png" />
+                            <text>关注</text>
+                        </view>
+                    </view>
+                    <view class="card_bottom_info">
+                        <view class="card_bottm_info-item">
+                            <text>888</text>
+                            <text>赞</text>
+                        </view>
+                        <view class="card_bottm_info-item">
+                            <text>12</text>
+                            <text>收藏</text>
+                        </view>
+                        <view class="card_bottm_info-item">
+                            <text>31</text>
+                            <text>关注</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="cover_container">
+        <view class="arr_comment">
+            <view class="arr_comment_title">
+                <image class="close" src="../../static/image/guanbi.png" />
+                <text>全部2265条评论</text>
+            </view>
+            <view class="arr_comment_list">
+                <view class="comment_item">
+                    <view class="comment_user_info">
+                        <view class="left_comment_user_info">
+                            <image src="../../static/image/taolun_tx.png" />
+                        </view>
+                        <view class="right_comment_praise">
+                            <view class="right_top_comment">
+                                <text class="comment_user_name">昵称</text>
+                                <view class="right_praise_num">
+                                    <image src="../../static/image/dianzan.png" />
+                                    <text>2,254</text>
+                                </view>
+                            </view>
+                            <view class="context">冬至的时候，另外一个独一无二的节日“烧钟节”便会
+开幕了。</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="bottom_fixed">
+        <view class="left_comment">
+            <image src="../../static/image/taolun_tx.png" />
+            <input placeholder="添加评论..." />
+        </view>
+        <view class="right_cz">
+            <view class="cz_item">
+                <image src="../../static/image/zhuanfa_2.png" />
+                <text class="">转发5531</text>
+            </view>
+            <view class="cz_item">
+                <image src="../../static/image/dianzan_3_2.png" />
+                <text class="select_color">点赞</text>
+            </view>
+            <view class="cz_item">
+                <image src="../../static/image/pinglun_2.png" />
+                <text class="">评论2264</text>
+            </view>
+        </view>
+    </view>
+</view>
